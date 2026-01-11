@@ -28,14 +28,32 @@ pip install requests
 **Usage**
 1. Run the Python script:
 python Intershala_Jobs_Scraping.py
-2.The script will:
-
+2. The script will:
 Open Chrome automatically.
-
 Navigate to the Internshala Data Science Jobs page.
-
 Scroll and load the job listings.
-
 Extract details from the first 15 job cards (can be increased).
-
 Save results to Internshala_Jobs_Scraping.csv.
+
+**CSV Output Example**
+| Job_Role       | Company     | Skills           | Location | Experience | Salary        |
+| -------------- | ----------- | ---------------- | -------- | ---------- | ------------- |
+| Data Scientist | ABC Pvt Ltd | Python, SQL      | Indore   | 1 year     | 4500 INR      |
+| ML Intern      | XYZ Corp    | Machine Learning | Pune     | 6 months   | Not Disclosed |
+
+**Dependencies**
+Python 3.x
+Selenium
+WebDriver Manager
+Google Chrome browser
+
+**Limitations**
+Works only with Chrome browser.
+Website structure changes may break the scraper.
+Internshala may block requests if run too frequently.
+
+**Future Improvements**
+Add support for multiple job categories in one run.
+Automatically detect and handle pagination for more listings.
+Integrate with LinkedIn or other job portals.
+Export results to Excel or Google Sheets.
